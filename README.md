@@ -1,3 +1,8 @@
+# ECO Framework
+
+![ECO Framework](https://github.com/cocalabs/ECO-framework/blob/master/eco-view.jpg "ECO Framework View")
+
+
 	Description: The ANSI C code of the ECO approach
 	Programmer:  Rafael Stubs Parpinelli
 	E-mail:      rsparpin@gmail.com
