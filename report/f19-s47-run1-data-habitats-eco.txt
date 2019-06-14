@@ -1,0 +1,2 @@
+# eco-step | number of habitats 
+ini' 1

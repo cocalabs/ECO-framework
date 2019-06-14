@@ -1,0 +1,32 @@
+Runs: 10 
+Species: 1 
+Candidate solutions in each specie: 50 
+Ecological succession steps: 1 
+Evolutionary steps (gen/cycles): 25000
+
+Run: 0 
+Eco-Step:  0 
+Run: 1 
+Eco-Step:  0 
+Run: 2 
+Eco-Step:  0 
+Run: 3 
+Eco-Step:  0 
+Run: 4 
+Eco-Step:  0 
+Run: 5 
+Eco-Step:  0 
+Run: 6 
+Eco-Step:  0 
+Run: 7 
+Eco-Step:  0 
+Run: 8 
+Eco-Step:  0 
+Run: 9 
+Eco-Step:  0 
+===============
+ Avg of All Species Global Best: -22.546 +/-  5.5316
+===============
+Mean Time (sec): 7.40 +/- 0.49
+NOHABITAT: enabled.
+REPORT: NOT enabled.

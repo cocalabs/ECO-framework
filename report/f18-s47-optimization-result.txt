@@ -1,0 +1,14 @@
+Runs: 30 
+Species: 1 
+Candidate solutions in each specie: 50 
+Ecological succession steps: 1 
+Evolutionary steps (gen/cycles): 500000
+
+Run: 0 
+Eco-Step:  0 
+Run: 1 
+Eco-Step:  0 
+Run: 2 
+Eco-Step:  0 
+Run: 3 
+Eco-Step:  0 

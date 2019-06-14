@@ -1,0 +1,16 @@
+v06 - Implements the dynamic population resizing using Logistic map. See IDEAL'12 paper.
+v07 - Implements the Hierarchical Clustering strategy that gives more biologically plausibility to the system and suppress the RHO parameter. See IBERAMIA'12 paper.
+v08 - Implements the input file where all configurations can be done throught the 'input_eco.in' file.
+v09 - Implements the 3D-AB protein folding problem.
+v10 - This version implements the PSO using dynamic allocation of memory and adds a lot of options for benchmark functions.
+v11 - This version adds the 10-bar-truss problem.
+v12 - Implements all variants of DE. Also an option was added to use all DE variants together. The algorithm jDE/BBO was added.
+      Implements another heterogeneous application with ABC, PSO and jDE/BBO.
+v13 - Implements the use of island model with ring topology.
+v14 - Report function is optimized with two options of reporting results.
+v16 - Function for 3D-AB protein folding problem fixed.
+v17 - Fixed a problem concerning in_specie.
+v18 - Some shifted functions are added.
+v18-release - New problems were added
+v19 - Fixed a memory leak problem
+v20 - Fixed a random seed initialization problem

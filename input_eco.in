@@ -1,0 +1,97 @@
+/*Input file*/
+RUN = 30
+SP_NUMBER = 1
+POP_SIZE = 50
+ECO_STEP = 1
+EVO_STEP = 500000
+T_SIZE = 5
+DIM = 250
+FUNCTION = 18
+NOHABITAT = 1
+REPORT = 1
+STRATEGY = 47
+SEQUENCE = BABABBABABBABBABABBABABBABBABABBABBABABBABABBABBABABBAB
+
+/* RUN is the number of times the ECO alg will run.*/
+/* SP_NUMBER is the number of populations that will compound the computational ecosystem. */
+/* POP_SIZE is the number of candidate solutions that compounds each population. */
+/* ECO_STEP is the number of ecological succession steps. */
+/* EVO_STEP is the number of function evaluations in each ECO_STEP. Evolutionary period. EVO_STEP is a multiple of POP_SIZE. */
+/* T_SIZE is the tourney size for solution selection. */
+/* DIM is the number of problem variables. */
+/* NOHABITAT disables {1} the habitat feature of the ecossystem meaning that the populations evolve without interact with each other. Simmulates panmitic evolution*/
+                    /*{0} means that NOHABITAT is off.*/
+/* REPORT is used to record infos. {0} disables the report and: */
+		    /* .{11} reports: the convergence of each specie, single-link information, mean number of habitats, overall best solution. */
+		    /* .{12} reports: all {11} information plus the centroid of all species in each eco-step, the whole population in each eco-step,
+		    /*  including the initial population , and other.*/
+/* STRATEGY defines the strategy to be employed. The current options are: */
+		    /* .1:  ABC. Standard values for: limit=100*/
+		    /* .2:  PSO. Standard values for: W=0.721; C1=C2=1.193 */
+		    /* .3:  ABC-PSO. 50% of SP_NUMBER is ABC and 50% of SP_NUMBER is PSO*/
+		    /* .41: DE/best/1/exp --> For all DE strategies, F = 0.9 and CR = 1.0*/
+		    /* .42: DE/rand/1/exp */
+		    /* .43: DE/rand-to-best/1/exp */
+		    /* .44: DE/best/2/exp */
+		    /* .45: DE/rand/2/exp */
+		    /* .46: DE/best/1/bin */
+		    /* .47: DE/rand/1/bin */
+		    /* .48: DE/rand-to-best/1/bin */
+		    /* .49: DE/best/2/bin */
+		    /* .40: DE/rand/2/bin */
+		    /* .5:  All DE where each population is optimized by one of the above DE options. */
+		    /* .6:  jDE/BBO. */
+		    /* .7:  ABC-PSO-jDE/BBO. 1/3 of SP_NUMBER is ABC, 1/3 of SP_NUMBER is PSO and 1/3 of SP_NUMBER is jDE/BBO.
+	            /* .8:  ABC-PSO-DE/rand/1/exp-jDE/BBO. 1/4 of SP_NUMBER behaves according to one of these strategies.
+                    /* .50: PRVNS*/
+
+/* FUNCTION represents the problem to be solved. The current options are:*/
+		    /* .0: Rastrigin  [  -5.12,   5.12]*/
+	  	    /*. 1: Schaffer F7   [-100.00, 100.00]*/
+		    /*. 2: Griewank   [-600.00, 600.00]*/
+		    /*. 3: Ackley     [ -32.00,  32.00]*/
+	 	    /*. 4: Rosenbrock [ -30.00,  30.00]*/
+	 	    /*. 5: Sphere     [-100.00, 100.00]*/
+		    /*. 6: StretchedV [-10.00, 10.00]*/
+		    /*. 7: Schwefel's function 2.22 [-10, 10]*/
+		    /*. 8: Step [-100, 100]*/
+		    /*. 9: Generalized Schwefel's function 2.26   [-500, 500]*/
+		    /*. 10: Generalized Penalized function #1 [-50, 50]*/
+		    /*. 11: Generalized Penalized function #2 [-50, 50]*/
+		    /*. 12: Levy Function [-10, 10]*/
+		    /*. 13: Zakharov [-5, 10]*/
+		    /*. 14: Egg Holder [-512, 512]*/
+		    /*. 15: Generalized Holzman [-10, 10]*/
+		    /*. 16: Michalewitz [0.00, PI]*/
+		    /*. 17: Multimod [-10.00, 10.00]*/
+		    /*. 18: Powell [-4.00, 5.00] DIM must be multiple of 4*/
+		    /*. 19: Rana [-512.00, 512.00]*/
+		    /*. 20: Shubert [-10.00, 10.00]*/
+		    /*. 21: 3D-AB */
+			/* SEQUENCE must be defined. This defines the sequence of amoni-acids to be optimized. */
+			/* DIM must be set to DIM = 2*ProteinSize-5 i.e.: 13 aminoacids --> DIM = 21*/
+			    /*. SEQUENCE = ABBABBABABBAB (13 amino-acids) DIM = 21*/
+			    /*. SEQUENCE = BABABBABABBABBABABBAB (21 amino-acids) DIM = 37*/
+			    /*. SEQUENCE = ABBABBABABBABBABABBABABBABBABABBAB (34 amino-acids) DIM = 63*/
+			    /*. SEQUENCE = BABABBABABBABBABABBABABBABBABABBABBABABBABABBABBABABBAB (55 amino-acids) DIM = 105*/
+		    /*. 22: 10-bar-truss [0.10, 35.00]*/
+			    /* DIM must be set to 10 */
+		    /*. 23: 2D-AB */
+			/* SEQUENCE must be defined. This defines the sequence of amoni-acids to be optimized. */
+			/* DIM must be set to DIM = ProteinSize-2 i.e.: 13 aminoacids --> DIM = 11*/
+			    /*. SEQUENCE = ABBABBABABBAB (13 amino-acids) DIM = 11*/
+			    /*. SEQUENCE = BABABBABABBABBABABBAB (21 amino-acids) DIM = 19*/
+			    /*. SEQUENCE = ABBABBABABBABBABABBABABBABBABABBAB (34 amino-acids) DIM = 32*/
+			    /*. SEQUENCE = BABABBABABBABBABABBABABBABBABABBABBABABBABABBABBABABBAB (55 amino-acids) DIM = 53*/
+		    /*. 24: Schaffer f6 [-100, 100]*/
+		    /*. 25: Shifited Sphere [-100, 100]*/
+		    /*. 26: Shifted Schwefel Problem 2.21 [-100, 100] */
+		    /*. 27: Shifted Rosenbrock [-100, 100] */
+		    /*. 28: Shifted Rastrigin [-5.12, 5.12] */
+		    /*. 30: Shifted Ackley  [ -32.00,  32.00]*//* 
+MATLAB Commands to plot dendrogram
+>> load('linkage.txt')                % load single-link information
+>> handle = dendrogram(linkage,0)     % plot dendrogram without limit of items
+>> set(handle,'LineWidth',[2])        % change line width
+*/
+
